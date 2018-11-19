@@ -156,54 +156,6 @@ refer to the applicable agreement for further details.
 	(annotation_block (location)(rect 1936 336 1992 360))
 )
 (symbol
-	(rect 304 216 600 392)
-	(text "pll1" (rect 136 0 159 16)(font "Arial" (font_size 10)))
-	(text "inst6" (rect 8 160 30 177)(font "Intel Clear" ))
-	(port
-		(pt 0 72)
-		(input)
-		(text "inclk0" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "inclk0" (rect 4 56 35 70)(font "Arial" (font_size 8)))
-		(line (pt 0 72)(pt 48 72))
-	)
-	(port
-		(pt 296 72)
-		(output)
-		(text "c0" (rect 0 0 14 14)(font "Arial" (font_size 8)))
-		(text "c0" (rect 278 56 292 70)(font "Arial" (font_size 8)))
-	)
-	(drawing
-		(text "Cyclone IV E" (rect 202 156 268 168)(font "Arial" ))
-		(text "inclk0 frequency: 50.000 MHz" (rect 58 66 205 78)(font "Arial" ))
-		(text "Operation Mode: Normal" (rect 58 82 177 94)(font "Arial" ))
-		(text "Clk " (rect 59 107 79 119)(font "Arial" ))
-		(text "Ratio" (rect 99 107 124 119)(font "Arial" ))
-		(text "Ph (dg)" (rect 147 107 182 119)(font "Arial" ))
-		(text "DC (%)" (rect 191 107 227 119)(font "Arial" ))
-		(text "c0" (rect 63 124 74 136)(font "Arial" ))
-		(text "1007/2000" (rect 84 124 134 136)(font "Arial" ))
-		(text "0.00" (rect 155 124 176 136)(font "Arial" ))
-		(text "50.00" (rect 196 124 223 136)(font "Arial" ))
-		(line (pt 0 0)(pt 297 0))
-		(line (pt 297 0)(pt 297 177))
-		(line (pt 0 177)(pt 297 177))
-		(line (pt 0 0)(pt 0 177))
-		(line (pt 56 105)(pt 232 105))
-		(line (pt 56 121)(pt 232 121))
-		(line (pt 56 138)(pt 232 138))
-		(line (pt 56 105)(pt 56 138))
-		(line (pt 81 105)(pt 81 138)(line_width 3))
-		(line (pt 144 105)(pt 144 138)(line_width 3))
-		(line (pt 188 105)(pt 188 138)(line_width 3))
-		(line (pt 231 105)(pt 231 138))
-		(line (pt 48 56)(pt 263 56))
-		(line (pt 263 56)(pt 263 159))
-		(line (pt 48 159)(pt 263 159))
-		(line (pt 48 56)(pt 48 159))
-		(line (pt 295 72)(pt 263 72))
-	)
-)
-(symbol
 	(rect 1048 504 1240 616)
 	(text "cronometer" (rect 5 0 60 12)(font "Arial" ))
 	(text "inst3" (rect 8 96 30 113)(font "Intel Clear" ))
@@ -252,34 +204,6 @@ refer to the applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 176 96))
 	)
-)
-(symbol
-	(rect 664 536 816 616)
-	(text "one_k_clock" (rect 5 0 66 12)(font "Arial" ))
-	(text "inst23" (rect 8 64 36 81)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk_in" (rect 0 0 28 12)(font "Arial" ))
-		(text "clk_in" (rect 21 27 49 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 152 32)
-		(output)
-		(text "clk_out" (rect 0 0 35 12)(font "Arial" ))
-		(text "clk_out" (rect 102 27 137 39)(font "Arial" ))
-		(line (pt 152 32)(pt 136 32))
-	)
-	(parameter
-		"comparator"
-		"25175"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 136 64))
-	)
-	(annotation_block (parameter)(rect 656 624 840 664))
 )
 (symbol
 	(rect 936 288 1096 432)
@@ -466,6 +390,56 @@ refer to the applicable agreement for further details.
 	)
 	(annotation_block (parameter)(rect 1752 152 1960 272))
 )
+(symbol
+	(rect 304 256 456 336)
+	(text "VGA_clock" (rect 5 0 59 12)(font "Arial" ))
+	(text "inst1" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_50" (rect 0 0 31 12)(font "Arial" ))
+		(text "clk_50" (rect 21 27 52 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "clk_25" (rect 0 0 31 12)(font "Arial" ))
+		(text "clk_25" (rect 105 27 136 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+)
+(symbol
+	(rect 664 536 816 616)
+	(text "one_k_clock" (rect 5 0 66 12)(font "Arial" ))
+	(text "inst2" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_in" (rect 0 0 28 12)(font "Arial" ))
+		(text "clk_in" (rect 21 27 49 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "clk_out" (rect 0 0 35 12)(font "Arial" ))
+		(text "clk_out" (rect 102 27 137 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32))
+	)
+	(parameter
+		"comparator"
+		"25000"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+	(annotation_block (parameter)(rect 816 496 1000 536))
+)
 (connector
 	(pt 1104 384)
 	(pt 1096 384)
@@ -473,10 +447,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 216 288)
 	(pt 304 288)
-)
-(connector
-	(pt 600 288)
-	(pt 616 288)
 )
 (connector
 	(pt 1224 184)
@@ -584,6 +554,10 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 816 568)
 	(pt 1048 568)
+)
+(connector
+	(pt 456 288)
+	(pt 616 288)
 )
 (junction (pt 616 288))
 (junction (pt 616 320))

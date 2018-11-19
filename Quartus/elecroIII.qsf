@@ -65,4 +65,5 @@ set_location_assignment PIN_A4 -to Gout
 set_location_assignment PIN_A5 -to Rout
 set_global_assignment -name VERILOG_FILE RGB_controller.v
 set_global_assignment -name VERILOG_FILE onek_clock.v
+set_global_assignment -name VERILOG_FILE VGA_clock.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

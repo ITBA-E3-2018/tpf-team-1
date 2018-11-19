@@ -6,7 +6,7 @@ module one_k_clock (clk_in, clk_out);
 	
 	reg [15:0] kcounter = 0; //counter to make a 1kHz clock
 	
-	parameter comparator = 25175; //comparador para poder hacer el clock de 1kHz
+	parameter comparator = 25000; //comparador para poder hacer el clock de 1kHz
 	always @(posedge clk_in) begin
 	
 		if (kcounter < comparator/2) begin
