@@ -25,7 +25,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Nov 18 15:10:22 2018
+    Info: Processing started: Wed Nov 21 22:32:47 2018
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off elecroIII -c elecroIII --vector_source=C:/intelFPGA_lite/18.1/VGA/Waveform.vwf --testbench_file=C:/intelFPGA_lite/18.1/VGA/simulation/qsim/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -33,9 +33,9 @@ Completed successfully.
 
 Completed successfully. 
 
-**** Generating the timing simulation netlist ****
+**** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/intelFPGA_lite/18.1/VGA/simulation/qsim/" elecroIII -c elecroIII
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/intelFPGA_lite/18.1/VGA/simulation/qsim/" elecroIII -c elecroIII
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -53,20 +53,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Nov 18 15:10:24 2018
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/intelFPGA_lite/18.1/VGA/simulation/qsim/ elecroIII -c elecroIII
+    Info: Processing started: Wed Nov 21 22:32:50 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/intelFPGA_lite/18.1/VGA/simulation/qsim/ elecroIII -c elecroIII
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file elecroIII_6_1200mv_85c_slow.vo in folder "C:/intelFPGA_lite/18.1/VGA/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file elecroIII_6_1200mv_0c_slow.vo in folder "C:/intelFPGA_lite/18.1/VGA/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file elecroIII_min_1200mv_0c_fast.vo in folder "C:/intelFPGA_lite/18.1/VGA/simulation/qsim//" for EDA simulation tool
 Info (204019): Generated file elecroIII.vo in folder "C:/intelFPGA_lite/18.1/VGA/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file elecroIII_6_1200mv_85c_v_slow.sdo in folder "C:/intelFPGA_lite/18.1/VGA/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file elecroIII_6_1200mv_0c_v_slow.sdo in folder "C:/intelFPGA_lite/18.1/VGA/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file elecroIII_min_1200mv_0c_v_fast.sdo in folder "C:/intelFPGA_lite/18.1/VGA/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file elecroIII_v.sdo in folder "C:/intelFPGA_lite/18.1/VGA/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4658 megabytes
-    Info: Processing ended: Sun Nov 18 15:10:26 2018
+    Info: Peak virtual memory: 4653 megabytes
+    Info: Processing ended: Wed Nov 21 22:32:52 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
@@ -84,61 +77,55 @@ c:/intelfpga_lite/18.1/modelsim_ase/win32aloem//vsim -c -do elecroIII.do
 
 Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
+
 # 10.5b
+
 
 # do elecroIII.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:10:27 on Nov 18,2018
+# Start time: 22:32:56 on Nov 21,2018
 # vlog -work work elecroIII.vo 
 # -- Compiling module elecroIII
+
+# -- Compiling module hard_block
 # 
 # Top level modules:
 # 	elecroIII
-# End time: 15:10:27 on Nov 18,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
 
+# End time: 22:32:56 on Nov 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:10:27 on Nov 18,2018
+# Start time: 22:32:56 on Nov 21,2018
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module elecroIII_vlg_vec_tst
+
 # 
 # Top level modules:
 # 	elecroIII_vlg_vec_tst
-# End time: 15:10:27 on Nov 18,2018, Elapsed time: 0:00:00
+# End time: 22:32:56 on Nov 21,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.elecroIII_vlg_vec_tst 
-# Start time: 15:10:27 on Nov 18,2018
+# Start time: 22:32:58 on Nov 21,2018
 # Loading work.elecroIII_vlg_vec_tst
 # Loading work.elecroIII
+# Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
-# Loading cycloneive_ver.cycloneive_pll
-# Loading cycloneive_ver.cycloneive_m_cntr
-# Loading cycloneive_ver.cycloneive_n_cntr
-# Loading cycloneive_ver.cycloneive_scale_cntr
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
 # Loading cycloneive_ver.cycloneive_clkctrl
 # Loading cycloneive_ver.cycloneive_mux41
 # Loading cycloneive_ver.cycloneive_ena_reg
-# Loading cycloneive_ver.cycloneive_lcell_comb
-# Loading altera_ver.dffeas
-# SDF 10.5b Compiler 2016.10 Oct  5 2016
-# 
-# Loading instances from elecroIII_v.sdo
 # Loading altera_ver.PRIM_GDFF_LOW
-# Loading timing data from elecroIII_v.sdo
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /elecroIII_vlg_vec_tst File: Waveform.vwf.vt
-# after#25
+# after#26
 
-#  Note : Cycloneive PLL locked to incoming clock
-# Time: 572392  Instance: elecroIII_vlg_vec_tst.i1.\inst6|altpll_component|auto_generated|pll1 
 # ** Note: $finish    : Waveform.vwf.vt(56)
 #    Time: 100 us  Iteration: 0  Instance: /elecroIII_vlg_vec_tst
-# End time: 15:10:29 on Nov 18,2018, Elapsed time: 0:00:02
+# End time: 22:32:59 on Nov 21,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -151,13 +138,7 @@ Reading C:/intelFPGA_lite/18.1/VGA/simulation/qsim/elecroIII.msim.vcd...
 
 Processing channel transitions... 
 
-Warning: Bout - signal not found in VCD.
-
-Warning: Gout - signal not found in VCD.
-
-Warning: Rout - signal not found in VCD.
-
-Writing the resulting VWF to C:/intelFPGA_lite/18.1/VGA/simulation/qsim/elecroIII_20181118151029.sim.vwf
+Writing the resulting VWF to C:/intelFPGA_lite/18.1/VGA/simulation/qsim/elecroIII_20181121223259.sim.vwf
 
 Finished VCD to VWF conversion.
 

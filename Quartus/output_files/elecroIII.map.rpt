@@ -1,5 +1,5 @@
-Analysis & Synthesis report for elecroIII
-Mon Nov 19 16:53:18 2018
+Analysis & Elaboration report for elecroIII
+Wed Nov 21 22:31:15 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -7,30 +7,13 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: VGA_controller:inst
- 13. Parameter Settings for User Entity Instance: RGB_controller:inst27
- 14. Parameter Settings for User Entity Instance: one_k_clock:inst2
- 15. Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Div4
- 16. Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Div5
- 17. Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Div6
- 18. Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Mod0
- 19. Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Div8
- 20. Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Mod2
- 21. Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Div7
- 22. Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Mod1
- 23. Post-Synthesis Netlist Statistics for Top Partition
- 24. Elapsed Time Per Partition
- 25. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: VGA_controller:inst
+  5. Parameter Settings for User Entity Instance: RGB_controller:inst27
+  6. Parameter Settings for User Entity Instance: one_k_clock:inst2
+  7. Analysis & Elaboration Settings
+  8. Analysis & Elaboration Messages
 
 
 
@@ -54,27 +37,82 @@ refer to the applicable agreement for further details.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
+; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 19 16:53:18 2018       ;
+; Analysis & Elaboration Status      ; Successful - Wed Nov 21 22:31:15 2018       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; elecroIII                                   ;
 ; Top-level Entity Name              ; elecroIII                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 806                                         ;
-;     Total combinational functions  ; 800                                         ;
-;     Dedicated logic registers      ; 109                                         ;
-; Total registers                    ; 109                                         ;
-; Total pins                         ; 8                                           ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VGA_controller:inst ;
++-------------------------+-------+--------------------------------+
+; Parameter Name          ; Value ; Type                           ;
++-------------------------+-------+--------------------------------+
+; horizontal_resolution   ; 640   ; Signed Integer                 ;
+; vertical_resolution     ; 480   ; Signed Integer                 ;
+; start_horizontal_write  ; 97    ; Signed Integer                 ;
+; finish_horizontal_write ; 544   ; Signed Integer                 ;
+; start_vertical_write    ; 206   ; Signed Integer                 ;
+; finish_vertical_write   ; 275   ; Signed Integer                 ;
++-------------------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RGB_controller:inst27 ;
++------------------+-------+-----------------------------------------+
+; Parameter Name   ; Value ; Type                                    ;
++------------------+-------+-----------------------------------------+
+; bit_width        ; 4     ; Signed Integer                          ;
+; bit_height       ; 5     ; Signed Integer                          ;
+; pixel_repeat     ; 14    ; Signed Integer                          ;
+; vertical_write   ; 206   ; Signed Integer                          ;
+; horizontal_write ; 97    ; Signed Integer                          ;
++------------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: one_k_clock:inst2 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; comparator     ; 25000 ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                              ;
+; Analysis & Elaboration Settings                                                                            ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -159,683 +197,14 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-+----------------------------+-------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                               ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
-; VGA_controller.v                 ; yes             ; User Verilog HDL File              ; C:/intelFPGA_lite/18.1/VGA/VGA_controller.v                                ;         ;
-; cronometer.v                     ; yes             ; User Verilog HDL File              ; C:/intelFPGA_lite/18.1/VGA/cronometer.v                                    ;         ;
-; elecroIII.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/18.1/VGA/elecroIII.bdf                                   ;         ;
-; RGB_controller.v                 ; yes             ; User Verilog HDL File              ; C:/intelFPGA_lite/18.1/VGA/RGB_controller.v                                ;         ;
-; onek_clock.v                     ; yes             ; User Verilog HDL File              ; C:/intelFPGA_lite/18.1/VGA/onek_clock.v                                    ;         ;
-; VGA_clock.v                      ; yes             ; User Verilog HDL File              ; C:/intelFPGA_lite/18.1/VGA/VGA_clock.v                                     ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc      ;         ;
-; db/lpm_divide_2jm.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/lpm_divide_2jm.tdf                           ;         ;
-; db/sign_div_unsign_qlh.tdf       ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/sign_div_unsign_qlh.tdf                      ;         ;
-; db/alt_u_div_87f.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/alt_u_div_87f.tdf                            ;         ;
-; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/add_sub_7pc.tdf                              ;         ;
-; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/add_sub_8pc.tdf                              ;         ;
-; db/lpm_divide_tim.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/lpm_divide_tim.tdf                           ;         ;
-; db/sign_div_unsign_llh.tdf       ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/sign_div_unsign_llh.tdf                      ;         ;
-; db/alt_u_div_u6f.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/alt_u_div_u6f.tdf                            ;         ;
-; db/lpm_divide_jhm.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/lpm_divide_jhm.tdf                           ;         ;
-; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/sign_div_unsign_bkh.tdf                      ;         ;
-; db/alt_u_div_a4f.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/alt_u_div_a4f.tdf                            ;         ;
-; db/lpm_divide_m9m.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/lpm_divide_m9m.tdf                           ;         ;
-; db/lpm_divide_hhm.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/lpm_divide_hhm.tdf                           ;         ;
-; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/sign_div_unsign_9kh.tdf                      ;         ;
-; db/alt_u_div_64f.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/alt_u_div_64f.tdf                            ;         ;
-; db/lpm_divide_k9m.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.1/VGA/db/lpm_divide_k9m.tdf                           ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
-
-
-+----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                          ;
-+---------------------------------------------+------------------------+
-; Resource                                    ; Usage                  ;
-+---------------------------------------------+------------------------+
-; Estimated Total logic elements              ; 806                    ;
-;                                             ;                        ;
-; Total combinational functions               ; 800                    ;
-; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 219                    ;
-;     -- 3 input functions                    ; 188                    ;
-;     -- <=2 input functions                  ; 393                    ;
-;                                             ;                        ;
-; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 563                    ;
-;     -- arithmetic mode                      ; 237                    ;
-;                                             ;                        ;
-; Total registers                             ; 109                    ;
-;     -- Dedicated logic registers            ; 109                    ;
-;     -- I/O registers                        ; 0                      ;
-;                                             ;                        ;
-; I/O pins                                    ; 8                      ;
-;                                             ;                        ;
-; Embedded Multiplier 9-bit elements          ; 0                      ;
-;                                             ;                        ;
-; Maximum fan-out node                        ; VGA_clock:inst4|clk_25 ;
-; Maximum fan-out                             ; 78                     ;
-; Total fan-out                               ; 2480                   ;
-; Average fan-out                             ; 2.68                   ;
-+---------------------------------------------+------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                          ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                              ; Entity Name         ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |elecroIII                                ; 800 (0)             ; 109 (0)                   ; 0           ; 0            ; 0       ; 0         ; 8    ; 0            ; |elecroIII                                                                                                                       ; elecroIII           ; work         ;
-;    |RGB_controller:inst27|                ; 660 (203)           ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27                                                                                                 ; RGB_controller      ; work         ;
-;       |lpm_divide:Div4|                   ; 136 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div4                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_2jm:auto_generated|  ; 136 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div4|lpm_divide_2jm:auto_generated                                                   ; lpm_divide_2jm      ; work         ;
-;             |sign_div_unsign_qlh:divider| ; 136 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div4|lpm_divide_2jm:auto_generated|sign_div_unsign_qlh:divider                       ; sign_div_unsign_qlh ; work         ;
-;                |alt_u_div_87f:divider|    ; 136 (136)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div4|lpm_divide_2jm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider ; alt_u_div_87f       ; work         ;
-;       |lpm_divide:Div5|                   ; 95 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div5                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_tim:auto_generated|  ; 95 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div5|lpm_divide_tim:auto_generated                                                   ; lpm_divide_tim      ; work         ;
-;             |sign_div_unsign_llh:divider| ; 95 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div5|lpm_divide_tim:auto_generated|sign_div_unsign_llh:divider                       ; sign_div_unsign_llh ; work         ;
-;                |alt_u_div_u6f:divider|    ; 95 (95)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div5|lpm_divide_tim:auto_generated|sign_div_unsign_llh:divider|alt_u_div_u6f:divider ; alt_u_div_u6f       ; work         ;
-;       |lpm_divide:Div6|                   ; 51 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div6                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_jhm:auto_generated|  ; 51 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div6|lpm_divide_jhm:auto_generated                                                   ; lpm_divide_jhm      ; work         ;
-;             |sign_div_unsign_bkh:divider| ; 51 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div6|lpm_divide_jhm:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh ; work         ;
-;                |alt_u_div_a4f:divider|    ; 51 (51)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div6|lpm_divide_jhm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_a4f:divider ; alt_u_div_a4f       ; work         ;
-;       |lpm_divide:Div7|                   ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div7                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_hhm:auto_generated|  ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div7|lpm_divide_hhm:auto_generated                                                   ; lpm_divide_hhm      ; work         ;
-;             |sign_div_unsign_9kh:divider| ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div7|lpm_divide_hhm:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
-;                |alt_u_div_64f:divider|    ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div7|lpm_divide_hhm:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_64f:divider ; alt_u_div_64f       ; work         ;
-;       |lpm_divide:Div8|                   ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div8                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_hhm:auto_generated|  ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div8|lpm_divide_hhm:auto_generated                                                   ; lpm_divide_hhm      ; work         ;
-;             |sign_div_unsign_9kh:divider| ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div8|lpm_divide_hhm:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
-;                |alt_u_div_64f:divider|    ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Div8|lpm_divide_hhm:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_64f:divider ; alt_u_div_64f       ; work         ;
-;       |lpm_divide:Mod0|                   ; 59 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_m9m:auto_generated|  ; 59 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Mod0|lpm_divide_m9m:auto_generated                                                   ; lpm_divide_m9m      ; work         ;
-;             |sign_div_unsign_bkh:divider| ; 59 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Mod0|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh ; work         ;
-;                |alt_u_div_a4f:divider|    ; 59 (59)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Mod0|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_a4f:divider ; alt_u_div_a4f       ; work         ;
-;       |lpm_divide:Mod1|                   ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Mod1                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_k9m:auto_generated|  ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Mod1|lpm_divide_k9m:auto_generated                                                   ; lpm_divide_k9m      ; work         ;
-;             |sign_div_unsign_9kh:divider| ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Mod1|lpm_divide_k9m:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
-;                |alt_u_div_64f:divider|    ; 33 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Mod1|lpm_divide_k9m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_64f:divider ; alt_u_div_64f       ; work         ;
-;       |lpm_divide:Mod2|                   ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Mod2                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_k9m:auto_generated|  ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Mod2|lpm_divide_k9m:auto_generated                                                   ; lpm_divide_k9m      ; work         ;
-;             |sign_div_unsign_9kh:divider| ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Mod2|lpm_divide_k9m:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
-;                |alt_u_div_64f:divider|    ; 33 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|RGB_controller:inst27|lpm_divide:Mod2|lpm_divide_k9m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_64f:divider ; alt_u_div_64f       ; work         ;
-;    |VGA_clock:inst4|                      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|VGA_clock:inst4                                                                                                       ; VGA_clock           ; work         ;
-;    |VGA_controller:inst|                  ; 67 (67)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|VGA_controller:inst                                                                                                   ; VGA_controller      ; work         ;
-;    |cronometer:inst3|                     ; 50 (50)             ; 31 (31)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|cronometer:inst3                                                                                                      ; cronometer          ; work         ;
-;    |one_k_clock:inst2|                    ; 22 (22)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |elecroIII|one_k_clock:inst2                                                                                                     ; one_k_clock         ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                   ;
-+---------------------------------------------+----------------------------------------+
-; Register name                               ; Reason for Removal                     ;
-+---------------------------------------------+----------------------------------------+
-; RGB_controller:inst27|number_to_write[5][3] ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|number_to_write[5][2] ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|number_to_write[5][1] ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|number_to_write[5][0] ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|number_to_write[2][3] ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|number_to_write[2][2] ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|number_to_write[2][1] ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|number_to_write[2][0] ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][19]        ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][18]        ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][17]        ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][16]        ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][15]        ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][14]        ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][13]        ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][12]        ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][11]        ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][10]        ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][9]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][8]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][7]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][6]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][5]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][4]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][3]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][2]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][1]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[10][0]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][19]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][18]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][17]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][16]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][15]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][14]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][13]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][12]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][11]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][10]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][9]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][8]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][7]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][6]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][5]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][4]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][3]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][2]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][1]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[9][0]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][19]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][18]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][17]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][16]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][15]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][14]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][13]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][12]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][11]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][10]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][9]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][8]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][7]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][6]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][5]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][4]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][3]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][2]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][1]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[8][0]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][19]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][18]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][17]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][16]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][15]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][14]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][13]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][12]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][11]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][10]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][9]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][8]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][7]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][6]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][5]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][4]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][3]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][2]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][1]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[7][0]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][19]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][18]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][17]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][16]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][15]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][14]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][13]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][12]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][11]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][10]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][9]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][8]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][7]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][6]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][5]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][4]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][3]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][2]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][1]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[6][0]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][19]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][18]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][17]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][16]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][15]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][14]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][13]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][12]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][11]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][10]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][9]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][8]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][7]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][6]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][5]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][4]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][3]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][2]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][1]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[5][0]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][19]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][18]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][17]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][16]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][15]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][14]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][13]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][12]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][11]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][10]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][9]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][8]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][7]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][6]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][5]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][4]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][3]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][2]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][1]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[4][0]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][19]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][18]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][17]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][16]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][15]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][14]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][13]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][12]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][11]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][10]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][9]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][8]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][7]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][6]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][5]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][4]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][3]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][2]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][1]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[3][0]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][19]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][18]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][17]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][16]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][15]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][14]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][13]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][12]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][11]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][10]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][9]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][8]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][7]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][6]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][5]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][4]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][3]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][2]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][1]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[2][0]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][19]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][18]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][17]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][16]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][15]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][14]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][13]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][12]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][11]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][10]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][9]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][8]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][7]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][6]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][5]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][4]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][3]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][2]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][1]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[1][0]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][19]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][18]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][17]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][16]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][15]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][14]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][13]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][12]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][11]         ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][10]         ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][9]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][8]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][7]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][6]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][5]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][4]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][3]          ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][2]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][1]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|digits[0][0]          ; Stuck at VCC due to stuck port data_in ;
-; RGB_controller:inst27|number_to_write[6][3] ; Stuck at GND due to stuck port data_in ;
-; RGB_controller:inst27|number_to_write[3][3] ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 230     ;                                        ;
-+---------------------------------------------+----------------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 109   ;
-; Number of registers using Synchronous Clear  ; 56    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 68    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; RGB_controller:inst27|only             ; 4       ;
-; Total number of inverted registers = 1 ;         ;
-+----------------------------------------+---------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |elecroIII|cronometer:inst3|seconds[4]     ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |elecroIII|cronometer:inst3|miliseconds[1] ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |elecroIII|cronometer:inst3|minutes[1]     ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |elecroIII|cronometer:inst3|hours[7]       ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |elecroIII|VGA_controller:inst|count2[7]   ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |elecroIII|VGA_controller:inst|count1[2]   ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |elecroIII|RGB_controller:inst27|Mux64     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: VGA_controller:inst ;
-+-------------------------+-------+--------------------------------+
-; Parameter Name          ; Value ; Type                           ;
-+-------------------------+-------+--------------------------------+
-; horizontal_resolution   ; 640   ; Signed Integer                 ;
-; vertical_resolution     ; 480   ; Signed Integer                 ;
-; start_horizontal_write  ; 97    ; Signed Integer                 ;
-; finish_horizontal_write ; 544   ; Signed Integer                 ;
-; start_vertical_write    ; 206   ; Signed Integer                 ;
-; finish_vertical_write   ; 275   ; Signed Integer                 ;
-+-------------------------+-------+--------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: RGB_controller:inst27 ;
-+------------------+-------+-----------------------------------------+
-; Parameter Name   ; Value ; Type                                    ;
-+------------------+-------+-----------------------------------------+
-; bit_width        ; 4     ; Signed Integer                          ;
-; bit_height       ; 5     ; Signed Integer                          ;
-; pixel_repeat     ; 14    ; Signed Integer                          ;
-; vertical_write   ; 206   ; Signed Integer                          ;
-; horizontal_write ; 97    ; Signed Integer                          ;
-+------------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: one_k_clock:inst2 ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; comparator     ; 25000 ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Div4 ;
-+------------------------+----------------+----------------------------------------------+
-; Parameter Name         ; Value          ; Type                                         ;
-+------------------------+----------------+----------------------------------------------+
-; LPM_WIDTHN             ; 32             ; Untyped                                      ;
-; LPM_WIDTHD             ; 6              ; Untyped                                      ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_PIPELINE           ; 0              ; Untyped                                      ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                      ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                      ;
-; CBXI_PARAMETER         ; lpm_divide_2jm ; Untyped                                      ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                      ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                      ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                 ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                               ;
-+------------------------+----------------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Div5 ;
-+------------------------+----------------+----------------------------------------------+
-; Parameter Name         ; Value          ; Type                                         ;
-+------------------------+----------------+----------------------------------------------+
-; LPM_WIDTHN             ; 11             ; Untyped                                      ;
-; LPM_WIDTHD             ; 4              ; Untyped                                      ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_PIPELINE           ; 0              ; Untyped                                      ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                      ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                      ;
-; CBXI_PARAMETER         ; lpm_divide_tim ; Untyped                                      ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                      ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                      ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                 ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                               ;
-+------------------------+----------------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Div6 ;
-+------------------------+----------------+----------------------------------------------+
-; Parameter Name         ; Value          ; Type                                         ;
-+------------------------+----------------+----------------------------------------------+
-; LPM_WIDTHN             ; 8              ; Untyped                                      ;
-; LPM_WIDTHD             ; 4              ; Untyped                                      ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_PIPELINE           ; 0              ; Untyped                                      ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                      ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                      ;
-; CBXI_PARAMETER         ; lpm_divide_jhm ; Untyped                                      ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                      ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                      ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                 ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                               ;
-+------------------------+----------------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Mod0 ;
-+------------------------+----------------+----------------------------------------------+
-; Parameter Name         ; Value          ; Type                                         ;
-+------------------------+----------------+----------------------------------------------+
-; LPM_WIDTHN             ; 8              ; Untyped                                      ;
-; LPM_WIDTHD             ; 4              ; Untyped                                      ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_PIPELINE           ; 0              ; Untyped                                      ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                      ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                      ;
-; CBXI_PARAMETER         ; lpm_divide_m9m ; Untyped                                      ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                      ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                      ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                 ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                               ;
-+------------------------+----------------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Div8 ;
-+------------------------+----------------+----------------------------------------------+
-; Parameter Name         ; Value          ; Type                                         ;
-+------------------------+----------------+----------------------------------------------+
-; LPM_WIDTHN             ; 6              ; Untyped                                      ;
-; LPM_WIDTHD             ; 4              ; Untyped                                      ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_PIPELINE           ; 0              ; Untyped                                      ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                      ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                      ;
-; CBXI_PARAMETER         ; lpm_divide_hhm ; Untyped                                      ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                      ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                      ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                 ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                               ;
-+------------------------+----------------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Mod2 ;
-+------------------------+----------------+----------------------------------------------+
-; Parameter Name         ; Value          ; Type                                         ;
-+------------------------+----------------+----------------------------------------------+
-; LPM_WIDTHN             ; 6              ; Untyped                                      ;
-; LPM_WIDTHD             ; 4              ; Untyped                                      ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_PIPELINE           ; 0              ; Untyped                                      ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                      ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                      ;
-; CBXI_PARAMETER         ; lpm_divide_k9m ; Untyped                                      ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                      ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                      ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                 ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                               ;
-+------------------------+----------------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Div7 ;
-+------------------------+----------------+----------------------------------------------+
-; Parameter Name         ; Value          ; Type                                         ;
-+------------------------+----------------+----------------------------------------------+
-; LPM_WIDTHN             ; 6              ; Untyped                                      ;
-; LPM_WIDTHD             ; 4              ; Untyped                                      ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_PIPELINE           ; 0              ; Untyped                                      ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                      ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                      ;
-; CBXI_PARAMETER         ; lpm_divide_hhm ; Untyped                                      ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                      ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                      ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                 ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                               ;
-+------------------------+----------------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: RGB_controller:inst27|lpm_divide:Mod1 ;
-+------------------------+----------------+----------------------------------------------+
-; Parameter Name         ; Value          ; Type                                         ;
-+------------------------+----------------+----------------------------------------------+
-; LPM_WIDTHN             ; 6              ; Untyped                                      ;
-; LPM_WIDTHD             ; 4              ; Untyped                                      ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
-; LPM_PIPELINE           ; 0              ; Untyped                                      ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                      ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                      ;
-; CBXI_PARAMETER         ; lpm_divide_k9m ; Untyped                                      ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                      ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                      ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                 ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                               ;
-+------------------------+----------------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 8                           ;
-; cycloneiii_ff         ; 109                         ;
-;     ENA               ; 38                          ;
-;     ENA SCLR          ; 30                          ;
-;     SCLR              ; 26                          ;
-;     plain             ; 15                          ;
-; cycloneiii_lcell_comb ; 800                         ;
-;     arith             ; 237                         ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 112                         ;
-;         3 data inputs ; 124                         ;
-;     normal            ; 563                         ;
-;         0 data inputs ; 41                          ;
-;         1 data inputs ; 17                          ;
-;         2 data inputs ; 222                         ;
-;         3 data inputs ; 64                          ;
-;         4 data inputs ; 219                         ;
-;                       ;                             ;
-; Max LUT depth         ; 31.60                       ;
-; Average LUT depth     ; 16.19                       ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:03     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 19 16:53:00 2018
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off elecroIII -c elecroIII
+    Info: Processing started: Wed Nov 21 22:30:59 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off elecroIII -c elecroIII --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.v
@@ -887,94 +256,10 @@ Warning (10230): Verilog HDL assignment warning at cronometer.v(56): truncated v
 Warning (10230): Verilog HDL assignment warning at cronometer.v(60): truncated value with size 32 to match size of target (10) File: C:/intelFPGA_lite/18.1/VGA/cronometer.v Line: 60
 Info (12128): Elaborating entity "one_k_clock" for hierarchy "one_k_clock:inst2"
 Warning (10230): Verilog HDL assignment warning at onek_clock.v(13): truncated value with size 32 to match size of target (16) File: C:/intelFPGA_lite/18.1/VGA/onek_clock.v Line: 13
-Info (278001): Inferred 8 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGB_controller:inst27|Div4" File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 65
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGB_controller:inst27|Div5" File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 65
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGB_controller:inst27|Div6" File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 74
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGB_controller:inst27|Mod0" File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 75
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGB_controller:inst27|Div8" File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 80
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGB_controller:inst27|Mod2" File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 81
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGB_controller:inst27|Div7" File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 77
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "RGB_controller:inst27|Mod1" File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 78
-Info (12130): Elaborated megafunction instantiation "RGB_controller:inst27|lpm_divide:Div4" File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 65
-Info (12133): Instantiated megafunction "RGB_controller:inst27|lpm_divide:Div4" with the following parameter: File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 65
-    Info (12134): Parameter "LPM_WIDTHN" = "32"
-    Info (12134): Parameter "LPM_WIDTHD" = "6"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_2jm.tdf
-    Info (12023): Found entity 1: lpm_divide_2jm File: C:/intelFPGA_lite/18.1/VGA/db/lpm_divide_2jm.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_qlh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_qlh File: C:/intelFPGA_lite/18.1/VGA/db/sign_div_unsign_qlh.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_87f.tdf
-    Info (12023): Found entity 1: alt_u_div_87f File: C:/intelFPGA_lite/18.1/VGA/db/alt_u_div_87f.tdf Line: 26
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc File: C:/intelFPGA_lite/18.1/VGA/db/add_sub_7pc.tdf Line: 22
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc File: C:/intelFPGA_lite/18.1/VGA/db/add_sub_8pc.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "RGB_controller:inst27|lpm_divide:Div5" File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 65
-Info (12133): Instantiated megafunction "RGB_controller:inst27|lpm_divide:Div5" with the following parameter: File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 65
-    Info (12134): Parameter "LPM_WIDTHN" = "11"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_tim.tdf
-    Info (12023): Found entity 1: lpm_divide_tim File: C:/intelFPGA_lite/18.1/VGA/db/lpm_divide_tim.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_llh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_llh File: C:/intelFPGA_lite/18.1/VGA/db/sign_div_unsign_llh.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_u6f.tdf
-    Info (12023): Found entity 1: alt_u_div_u6f File: C:/intelFPGA_lite/18.1/VGA/db/alt_u_div_u6f.tdf Line: 26
-Info (12130): Elaborated megafunction instantiation "RGB_controller:inst27|lpm_divide:Div6" File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 74
-Info (12133): Instantiated megafunction "RGB_controller:inst27|lpm_divide:Div6" with the following parameter: File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 74
-    Info (12134): Parameter "LPM_WIDTHN" = "8"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_jhm.tdf
-    Info (12023): Found entity 1: lpm_divide_jhm File: C:/intelFPGA_lite/18.1/VGA/db/lpm_divide_jhm.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_bkh File: C:/intelFPGA_lite/18.1/VGA/db/sign_div_unsign_bkh.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_a4f.tdf
-    Info (12023): Found entity 1: alt_u_div_a4f File: C:/intelFPGA_lite/18.1/VGA/db/alt_u_div_a4f.tdf Line: 26
-Info (12130): Elaborated megafunction instantiation "RGB_controller:inst27|lpm_divide:Mod0" File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 75
-Info (12133): Instantiated megafunction "RGB_controller:inst27|lpm_divide:Mod0" with the following parameter: File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 75
-    Info (12134): Parameter "LPM_WIDTHN" = "8"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_m9m.tdf
-    Info (12023): Found entity 1: lpm_divide_m9m File: C:/intelFPGA_lite/18.1/VGA/db/lpm_divide_m9m.tdf Line: 24
-Info (12130): Elaborated megafunction instantiation "RGB_controller:inst27|lpm_divide:Div8" File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 80
-Info (12133): Instantiated megafunction "RGB_controller:inst27|lpm_divide:Div8" with the following parameter: File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 80
-    Info (12134): Parameter "LPM_WIDTHN" = "6"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_hhm.tdf
-    Info (12023): Found entity 1: lpm_divide_hhm File: C:/intelFPGA_lite/18.1/VGA/db/lpm_divide_hhm.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_9kh File: C:/intelFPGA_lite/18.1/VGA/db/sign_div_unsign_9kh.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_64f.tdf
-    Info (12023): Found entity 1: alt_u_div_64f File: C:/intelFPGA_lite/18.1/VGA/db/alt_u_div_64f.tdf Line: 26
-Info (12130): Elaborated megafunction instantiation "RGB_controller:inst27|lpm_divide:Mod2" File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 81
-Info (12133): Instantiated megafunction "RGB_controller:inst27|lpm_divide:Mod2" with the following parameter: File: C:/intelFPGA_lite/18.1/VGA/RGB_controller.v Line: 81
-    Info (12134): Parameter "LPM_WIDTHN" = "6"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_k9m.tdf
-    Info (12023): Found entity 1: lpm_divide_k9m File: C:/intelFPGA_lite/18.1/VGA/db/lpm_divide_k9m.tdf Line: 24
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 818 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 810 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 4777 megabytes
-    Info: Processing ended: Mon Nov 19 16:53:18 2018
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:34
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 4729 megabytes
+    Info: Processing ended: Wed Nov 21 22:31:15 2018
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:33
 
 
