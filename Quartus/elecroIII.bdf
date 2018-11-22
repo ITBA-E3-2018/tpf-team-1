@@ -391,28 +391,6 @@ refer to the applicable agreement for further details.
 	(annotation_block (parameter)(rect 1752 152 1960 272))
 )
 (symbol
-	(rect 304 256 456 336)
-	(text "VGA_clock" (rect 5 0 59 12)(font "Arial" ))
-	(text "inst1" (rect 8 64 30 81)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk_50" (rect 0 0 31 12)(font "Arial" ))
-		(text "clk_50" (rect 21 27 52 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 152 32)
-		(output)
-		(text "clk_25" (rect 0 0 31 12)(font "Arial" ))
-		(text "clk_25" (rect 105 27 136 39)(font "Arial" ))
-		(line (pt 152 32)(pt 136 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 136 64))
-	)
-)
-(symbol
 	(rect 664 536 816 616)
 	(text "one_k_clock" (rect 5 0 66 12)(font "Arial" ))
 	(text "inst2" (rect 8 64 30 81)(font "Intel Clear" ))
@@ -440,13 +418,31 @@ refer to the applicable agreement for further details.
 	)
 	(annotation_block (parameter)(rect 816 496 1000 536))
 )
+(symbol
+	(rect 304 256 456 336)
+	(text "VGA_clock" (rect 5 0 59 12)(font "Arial" ))
+	(text "inst4" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_50" (rect 0 0 31 12)(font "Arial" ))
+		(text "clk_50" (rect 21 27 52 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "clk_25" (rect 0 0 31 12)(font "Arial" ))
+		(text "clk_25" (rect 105 27 136 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+)
 (connector
 	(pt 1104 384)
 	(pt 1096 384)
-)
-(connector
-	(pt 216 288)
-	(pt 304 288)
 )
 (connector
 	(pt 1224 184)
@@ -554,6 +550,10 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 816 568)
 	(pt 1048 568)
+)
+(connector
+	(pt 216 288)
+	(pt 304 288)
 )
 (connector
 	(pt 456 288)
